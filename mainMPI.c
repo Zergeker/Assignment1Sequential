@@ -24,6 +24,8 @@ int main(int argc, char** argv) {
 
 	while ((int)str[0] <= alphabet)
 	{
+		str[strSize-1] = (int)str[strSize-1]+1;
+
 		if (p(strSize, str) == 0)
 		{
 			time_t t2 = time(0);
@@ -32,8 +34,6 @@ int main(int argc, char** argv) {
 			return 0;
 		}
 		
-		str[strSize-1] = (int)str[strSize-1]+1;
-		printf("%d \n", str[strSize-1]);
 		int j = strSize - 1;
 		while ((int)str[j] == alphabet)
 		{
