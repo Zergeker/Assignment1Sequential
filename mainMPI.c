@@ -24,8 +24,7 @@ int main(int argc, char** argv) {
 
 	while ((int)str[0] <= alphabet)
 	{
-		int s = p(strSize, str);
-		if (s == 1)
+		if (p(strSize, str) == 0)
 		{
 			time_t t2 = time(0);
 			printf("Password found: %s, time taken: %f seconds\n", str, difftime(t2, t1));
